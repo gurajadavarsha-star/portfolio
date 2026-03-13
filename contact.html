@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e59d9;
+}
+.send-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e73df;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #2e59d9;
+}
+
+.success-msg {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#sent:checked ~ .success-msg {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <div class="card">
+        <h2>Get in Touch</h2>
+        <p>Email: varshagurajada1@gmail.com</p>
+        <p>Phone: 9000222576</p>
+
+        <h3>Send Message</h3>
+       <form>
+    
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br><br>
+    <textarea placeholder="Your Message" rows="2" required></textarea><br><br>
+
+    
+    <input type="checkbox" id="sent" hidden>
+    
+    <label for="sent" class="send-btn">Send</label>
+
+    <p class="success-msg">
+         Message Sent Successfully!
+    </p>
+
+</form>
+   <a href="index.html" class="btn">Back to Home</a>
+    </div>
+</section>
+
+<footer>
+    <p>©️ 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
